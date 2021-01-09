@@ -40,10 +40,40 @@ export const Bars = styled(FaBars)`
   }
 `;
 
-export const NavBtn = styled.navbtn`
-  background: #000;
+export const NavMenu = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: -24px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  } ;
 `;
 
-export const NavMenu = styled.navmenu`
-  background: #000;
+export const NavBtn = styled.nav`
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  } ;
+`;
+
+export const NavBtnLink = styled(Link)`
+  border-radius: 4px;
+  background: #256ce1;
+  padding: 10px 22px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    text-decoration: #fff;
+    color: #010606;
+  }
 `;
